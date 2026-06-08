@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background-color: #4d1616;
+    overflow-x: hidden; 
+}
+
+.contenedor-oculto {
+    display: none;
+}
+
+.contenedor{
+    width: 92%;
+    margin: 0 auto;
+    display: block; 
+}
+
+/* HEADER */
+
+header{
+    background-color: #d91017;
+    height: 140px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 10px solid white;
+}
+
+.logo{
+    width: 200px;
+}
+
+.titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;         /* Tamaño grande y legible */
+    font-weight: 700;        /* Negrita elegante */
+    letter-spacing: 2px;     /* Separación con clase entre letras */
+    font-style: italic;      /* Toque inclinado tipo marca de lujo */
+    color: #ffffff;          /* Asegura que sea blanca (o el color que tengas) */
+}
+
+.boton{
+    width: 220px;
+    height: 70px;
+    border: none;
+    background-color: #f1e7e7;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* PORTADA DE BIENVENIDA CON EFECTO SLIDER */
+
+.hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85) 35%, rgba(0, 0, 0, 0.2) 100%), 
+                      url('img/Ferrari-SF90-Stradale.jpg.webp'); 
+    
+    background-size: cover;       
+    background-position: center;  
+    width: 100%; 
+    height: calc(100vh - 140px);                 
+    
+    display: flex;
+    align-items: center;          
+    padding-left: 8%;  
+    
+    /* EFECTO TRANSICIÓN: Hace que el cambio de imagen de fondo sea suave */
+    transition: background-image 0.8s ease-in-out;          
+}
+
+.hero-contenido {
+    max-width: 500px;             
+    color: white;
+}
+
+.hero-subtitulo {
+    font-size: 14px;
+    letter-spacing: 3px;          
+    color: #e61a22;               
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero-titulo {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero-descripcion {
+    font-size: 16px;
+    color: #dddddd;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    height: 50px; /* Evita que el botón se mueva si un texto es más largo que otro */
+}
+
+.hero-boton {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;      
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;    
+}
+
+.hero-boton:hover {
+    background-color: white;
+    color: black;
+}
+
+/* PRODUCTOS */
+
+.productos{
+    background-color: #aa9d9d;
+    padding: 30px;
+}
+
+.carro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #8c8282; 
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carro img {
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carro:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nombre{
+    width: 350px;
+    height: 100px;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #d9d9d9;
+    height: 100px;
+    border-top: 10px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    margin-top: 10px;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+.productos a{
+    text-decoration: none; 
+    color: inherit;        
+    display: block;        
+    width: 100%;   
+}        

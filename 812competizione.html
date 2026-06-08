@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari 812 Competizione - Detalles</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .detalle-hero {
+            width: 100%;
+            height: 60vh;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('img/Ferrari-812-Competizione.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            padding: 40px 8%;
+        }
+        .detalle-titulo-contenedor { color: white; }
+        .detalle-marca { color: #e61a22; font-size: 14px; letter-spacing: 4px; font-weight: bold; }
+        .detalle-nombre-carro { font-size: 48px; font-weight: bold; margin-top: 5px; }
+        .seccion-info { background-color: #1a1a1a; color: white; padding: 60px 8%; }
+        .info-grid { display: flex; gap: 50px; flex-wrap: wrap; }
+        .columna-especificaciones { flex: 1; min-width: 300px; }
+        .columna-lujos { flex: 1; min-width: 300px; }
+        .info-titulo { font-size: 22px; color: #e61a22; border-bottom: 2px solid #e61a22; padding-bottom: 10px; margin-bottom: 20px; letter-spacing: 1px; }
+        .tabla-specs { width: 100%; border-collapse: collapse; }
+        .tabla-specs tr { border-bottom: 1px solid #333; }
+        .tabla-specs td { padding: 12px 0; font-size: 16px; }
+        .spec-label { color: #888; font-weight: bold; }
+        .spec-value { text-align: right; color: #fff; }
+        .lujo-item { margin-bottom: 20px; background-color: #262626; padding: 20px; border-left: 4px solid white; }
+        .lujo-item h4 { font-size: 18px; margin-bottom: 8px; color: #fff; }
+        .lujo-item p { font-size: 14px; color: #cccccc; line-height: 1.4; }
+        .btn-volver { display: inline-block; margin-top: 40px; background-color: transparent; color: white; border: 2px solid white; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 14px; transition: all 0.3s ease; }
+        .btn-volver:hover { background-color: white; color: black; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="img/Ferrari-logo.jpg" alt="Logo Ferrari">
+        <h1 class="titulo">FERRARI'S CARS</h1>
+        <a href="index.html" style="text-decoration: none;"><button class="boton">INICIO</button></a>
+    </header>
+
+    <section class="detalle-hero">
+        <div class="detalle-titulo-contenedor">
+            <span class="detalle-marca">RACE-BRED SPECIAL SERIES</span>
+            <h1 class="detalle-nombre-carro">812 COMPETIZIONE</h1>
+        </div>
+    </section>
+
+    <section class="seccion-info">
+        <div class="info-grid">
+            
+            <div class="columna-especificaciones">
+                <h3 class="info-titulo">ESPECIFICACIONES TÉCNICAS</h3>
+                <table class="tabla-specs">
+                    <tr>
+                        <td class="spec-label">Motor</td>
+                        <td class="spec-value">V12 a 65° - 6.5 Litros</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-label">Potencia Máxima</td>
+                        <td class="spec-value">830 CV a 9,250 RPM</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-label">Aceleración (0-100 km/h)</td>
+                        <td class="spec-value">2.85 segundos</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-label">Velocidad Máxima</td>
+                        <td class="spec-value">340 km/h</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-label">Dirección</td>
+                        <td class="spec-value">Eje trasero direccional independiente</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="columna-lujos">
+                <h3 class="info-titulo">DETALLES EXCLUSIVOS DE PORTADA</h3>
+                
+                <div class="lujo-item">
+                    <h4>Luneta Trasera de Aluminio Patente</h4>
+                    <p>Sustituye el vidrio trasero por una estructura continua de aluminio con generadores de vórtices para pegar el auto al suelo.</p>
+                </div>
+
+                <div class="lujo-item">
+                    <h4>Interiores de Competencia Aligerados</h4>
+                    <p>Paneles de las puertas reducidos en peso y tapicería en tejido técnico transpirable antideslizante para circuito.</p>
+                </div>
+
+                <div class="lujo-item">
+                    <h4>Escape de Titanio de Carreras</h4>
+                    <p>Salidas de escape rectangulares rediseñadas que optimizan los flujos de gases y entregan un sonido ensordecedor de F1 clásico.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="btn-volver">← VOLVER AL CATÁLOGO</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Ferrari Cars</p>
+    </footer>
+
+</body>
+</html>
