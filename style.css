@@ -23,13 +23,13 @@ body{
 /* HEADER */
 
 header{
-    background-color: #d91017;
+    background-color: hsla(359, 66%, 16%, 0.84);
     height: 140px;
     width: 100%; 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid rgb(119, 77, 77);
 }
 
 .logo{
@@ -113,14 +113,14 @@ header{
 }
 
 .hero-boton:hover {
-    background-color: white;
+    background-color: rgba(134, 206, 19, 0.836);
     color: black;
 }
 
 /* PRODUCTOS */
 
 .productos{
-    background-color: #aa9d9d;
+    background-color: #492c2c;
     padding: 30px;
 }
 
@@ -129,7 +129,7 @@ header{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 40px;
-    background-color: #8c8282; 
+    background-color: #665454; 
     padding: 20px;
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -150,19 +150,22 @@ header{
 .nombre{
     width: 350px;
     height: 100px;
-    background-color: #eeeeee;
+    background-color: #694843;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 22px;
+    border-radius: 12px; 
+    object-fit: cover; 
+    color: rgb(255, 255, 255);
 }
 
 /* FOOTER */
 
 footer{
-    background-color: #d9d9d9;
+    background-color: #7a7272;
     height: 100px;
-    border-top: 10px solid white;
+    border-top: 10px solid rgb(230, 200, 200);
     display: flex;
     flex-direction: column;
     justify-content: center;
